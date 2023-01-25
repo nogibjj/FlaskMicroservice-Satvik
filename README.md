@@ -2,8 +2,8 @@
 
 To run on local:
 
-```
-cd path/to/repo
+```sh
+$ cd path/to/repo
 $ export FLASK_APP=api
 $ flask run
 ```
