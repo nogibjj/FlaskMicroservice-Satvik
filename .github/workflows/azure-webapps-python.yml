@@ -37,6 +37,8 @@ jobs:
 
     steps:
       - name: Azure Login
+        with:
+          credentials: ${{ secrets.AZURE_CREDENTIALS }}
         uses: Azure/login@v1
       
       - uses: actions/checkout@v3
