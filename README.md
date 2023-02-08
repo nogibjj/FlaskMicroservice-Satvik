@@ -11,4 +11,4 @@ On browser:
 go to http://127.0.0.1:5000  
 go to http://127.0.0.1:5000/input?user=username
 
-not workin yet
+not working yet
