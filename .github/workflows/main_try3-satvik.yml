@@ -31,10 +31,10 @@ jobs:
         run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
-      -name: lint with pylint
+      - name: Test with pytest
         run: |
           pylint **/*.py
-      
+
       - name: Test with pytest
         run: |
           pytest
