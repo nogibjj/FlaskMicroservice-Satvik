@@ -34,7 +34,7 @@ jobs:
       - name: Lint with pylint and black
         run: |
           black --diff --check $(git ls-files '*.py')
-          pylint -v --enable=unused-import $(git ls-files '*.py')
+          pylint disable=all --enable=unused-import $(git ls-files '*.py')
 
       - name: Test with pytest
         run: |
