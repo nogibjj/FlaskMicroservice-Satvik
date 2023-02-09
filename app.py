@@ -20,3 +20,10 @@ def opt2():
     return f'User is {global_store[0]}'
 
 
+@app.route('/square')
+def opt3(n=None):
+    if n is None:
+        n = request.args.get('n')
+        n = int(n)
+    # global_store[0] = user
+    return str(n**2)
